@@ -1,5 +1,5 @@
 ---------------------------
-\.   program this is     ./
+\.   setup this is     ./
 /.     Open-Source       .\
 \.                       ./
 /.                       .\
