@@ -11,3 +11,7 @@ if #args == 0 then
     print("uninstall")
     print("list")
 end
+if #args > 0 then
+    if args[1] == "list" then
+        action = shell.execute("cat /home/plist.txt")
+    elseif 
