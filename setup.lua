@@ -15,3 +15,4 @@ if #args > 0 then
     if args[1] == "list" then
         action = shell.execute("cat /home/plist.txt")
     end
+end
