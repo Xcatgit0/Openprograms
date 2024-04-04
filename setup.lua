@@ -4,6 +4,10 @@ local shell = require("shell")
 local event = require("event")
 local args = shell.parse(...)
 if #args == 0 then
-    print("Use: setup (text)")
+    print("Use: ")
+    print("setup [method] [selector]")
+    print("method: ")
+    print("install")
+    print("uninstall")
+    print("list")
 end
-print(args[1])
