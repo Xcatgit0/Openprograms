@@ -5,7 +5,7 @@ local event = require("event")
 local args = shell.parse(...)
 local method = args[1]
 local selector = args[2]
-if #method == 0 then
+if #args == 0 then
     print("Use: ")
     print("setup [method] [selector]")
     print("method: ")
@@ -13,7 +13,7 @@ if #method == 0 then
     print("uninstall")
     print("list")
 end
-if #method > 0 then
+if #args > 0 then
     if #method == "list" then
         action = shell.execute("cat /home/psetup/plist.txt")
     elseif #method == "install" then
