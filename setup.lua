@@ -14,5 +14,7 @@ end
 if #args > 0 then
     if args[1] == "list" then
         action = shell.execute("cat /home/psetup/plist.txt")
+    elseif args[1] == "install" then
+        action = shell.execute("/home/psetup/install.lua "args[2])
     end
 end
