@@ -3,8 +3,6 @@ local gpu = component.gpu
 local shell = require("shell")
 local event = require("event")
 local args = shell.parse(...)
-local method = args[1]
-local selector = args[2]
 if #args == 0 then
     print("Use: ")
     print("setup [method] [selector]")
@@ -14,10 +12,10 @@ if #args == 0 then
     print("list")
 end
 if #args > 0 then
-    if method == "list" then
+    if args[1] == "list" then
         action = shell.execute("cat /home/psetup/plist.txt")
-    elseif method == "install" then
-        if selector == DrawX then
+    elseif args[1] == "install" then
+        if args[2] == DrawX then
             action = shell.execute("cp /home/psetup/.asset/DrawX.lua /usr/bin/DrawX.lua")
         end
     end
