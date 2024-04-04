@@ -13,6 +13,6 @@ if #args == 0 then
 end
 if #args > 0 then
     if args[1] == "list" then
-        action = shell.execute("cat /home/plist.txt")
+        action = shell.execute("cat /home/psetup/plist.txt")
     end
 end
