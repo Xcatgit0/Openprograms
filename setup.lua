@@ -17,6 +17,7 @@ if #args > 0 then
     elseif args[1] == "install" then
         if args[2] == DrawX then
             action = shell.execute("cp /home/psetup/.asset/DrawX.lua /usr/bin/DrawX.lua")
+            action = io.write("installation succesfull")
         end
     end
 end
