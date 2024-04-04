@@ -5,7 +5,7 @@ local event = require("event")
 local args = shell.parse(...)
 local method = args[1]
 local selector = args[2]
-if method == 0 then
+if #method == 0 then
     print("Use: ")
     print("setup [method] [selector]")
     print("method: ")
